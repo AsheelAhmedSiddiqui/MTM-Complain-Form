@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Maktaba-Tul-Madinah Complain Form</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="image/logo.jpg" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="img">
+				<img src="image/logo.jpg" alt="MTM Logo" />
+			</div>
+			<form
+				id="complainForm"
+				method="post"
+				action="https://script.google.com/macros/s/AKfycbyVdnyPVi6BYRrVp17EZWRQCk-7Z8psZs6-sZUcdSGoey4Qo2t4PN5wbzafAJJfOH9lLA/exec"
+				target="_blank"
+			>
+				<h1>Maktaba-Tul-Madinah <span>IT Complaint Form</span></h1>
+				<div class="dtBox">
+					<div class="date">
+						<label for="date">Date:</label>
+						<input type="text" readonly id="date" name="date" required />
+					</div>
+					<div class="time">
+						<label for="time">Time:</label>
+						<input type="text" readonly id="time" name="time" required />
+					</div>
+				</div>
+
+				<div class="ddBox">
+					<div class="day">
+						<label for="day">Day:</label>
+						<input type="text" readonly id="day" name="day" required />
+					</div>
+					<div class="depart">
+						<label for="department">Department:</label>
+						<select name="department" id="department" required>
+							<option selected disabled>Select Department</option>
+							<option value="Production">Production Dept</option>
+							<option value="Accounts & Finance">
+								Accounts & Finance Dept
+							</option>
+							<option value="Social Media">Social Media Dept</option>
+							<option value="ADC">ADC Dept</option>
+							<option value="POS-Faizan-e-Madinah">POS-FM</option>
+							<option value="POS-illmiya">POS-Illmiya</option>
+							<option value="POS-Alarabiya">POS-Alarabiya</option>
+							<option value="POS-Ahram">POS-Ahram</option>
+						</select>
+					</div>
+				</div>
+
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required />
+
+				<label for="complain">Complain:</label>
+				<textarea id="complain" name="complain" rows="4" required></textarea>
+				<div class="btn">
+					<button type="submit" name="btn">Submit Complain</button>
+				</div>
+			</form>
+		</div>
+		<p>
+			CopyRight &copy; <span id="currentYear"></span> By IT Department of
+			<span>Maktaba-Tul-Madinah</span>
+		</p>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
+
+<!-- Made by Asheel Ahmed -->
